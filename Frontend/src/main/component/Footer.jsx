@@ -48,7 +48,7 @@ const Footer = () => {
     },
     {
       icon: <FaWhatsapp className="w-5 h-5" />,
-      href: "https://youtube.com/@amcoaching.classes?si=GMW3uCeyoYj4FNhw",
+      href: "https://wa.me/918827123844",
       label: "LinkedIn",
     },
   ];
