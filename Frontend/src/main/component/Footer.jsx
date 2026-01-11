@@ -1,31 +1,56 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, Youtube } from 'lucide-react';
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+  Youtube,
+} from "lucide-react";
 import logo from "../../../assests/Logo/AMlogo.jpeg";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'About Us', path: '#about' },
-    { name: 'Features', path: '#features' },
-    { name: 'Our Gallery', path: '#imageslider' },
+    { name: "Home", path: "/" },
+    { name: "About Us", path: "#about" },
+    { name: "Features", path: "#features" },
+    { name: "Our Gallery", path: "#imageslider" },
   ];
 
   const courses = [
-    { name: 'Mathematics', path: '#courses' },
-    { name: 'Science', path: '#courses' },
-    { name: 'English', path: '#courses' },
-    { name: 'Social Studies', path: '#courses' }
+    { name: "Mathematics", path: "#courses" },
+    { name: "Science", path: "#courses" },
+    { name: "English", path: "#courses" },
+    { name: "Social Studies", path: "#courses" },
   ];
 
   const socialLinks = [
-    { icon: <Facebook className="w-5 h-5" />, href: 'https://www.facebook.com/share/1BLbRbcXRA/', label: 'Facebook' },
     {
-      icon: <Instagram className="w-5 h-5" />, href: 'https://www.instagram.com/amcoachingclasses1?igsh=YzljYTk1ODg3Zg==', label: 'Instagram'
+      icon: <Facebook className="w-5 h-5" />,
+      href: "https://www.facebook.com/share/1BLbRbcXRA/",
+      label: "Facebook",
     },
-    { icon: <Youtube className="w-5 h-5" />, href: '@amcoaching.classes', label: 'LinkedIn' }
+    {
+      icon: <Instagram className="w-5 h-5" />,
+      href: "https://www.instagram.com/amcoachingclasses1?igsh=YzljYTk1ODg3Zg==",
+      label: "Instagram",
+    },
+    {
+      icon: <Youtube className="w-5 h-5" />,
+      href: "https://youtube.com/@amcoaching.classes?si=GMW3uCeyoYj4FNhw",
+      label: "LinkedIn",
+    },
+    {
+      icon: <FaWhatsapp className="w-5 h-5" />,
+      href: "https://youtube.com/@amcoaching.classes?si=GMW3uCeyoYj4FNhw",
+      label: "LinkedIn",
+    },
   ];
 
   return (
@@ -42,10 +67,13 @@ const Footer = () => {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <span className="text-xl font-bold text-white">A.M Coaching Classes</span>
+              <span className="text-xl font-bold text-white">
+                A.M Coaching Classes
+              </span>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed">
-              Excellence in education with personalized attention, expert faculty, and comprehensive courses for all subjects.
+              Excellence in education with personalized attention, expert
+              faculty, and comprehensive courses for all subjects.
             </p>
             <div className="flex space-x-3">
               {socialLinks.map((social, index) => (
@@ -63,7 +91,9 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-white font-semibold text-lg mb-4">Quick Links</h3>
+            <h3 className="text-white font-semibold text-lg mb-4">
+              Quick Links
+            </h3>
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
@@ -81,7 +111,9 @@ const Footer = () => {
 
           {/* Courses */}
           <div>
-            <h3 className="text-white font-semibold text-lg mb-4">Our Courses</h3>
+            <h3 className="text-white font-semibold text-lg mb-4">
+              Our Courses
+            </h3>
             <ul className="space-y-3">
               {courses.map((course, index) => (
                 <li key={index}>
@@ -99,7 +131,9 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-white font-semibold text-lg mb-4">Contact Us</h3>
+            <h3 className="text-white font-semibold text-lg mb-4">
+              Contact Us
+            </h3>
             <ul className="space-y-4">
               <li className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-green-500 flex-shrink-0" />
@@ -107,14 +141,15 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-orange-500 flex-shrink-0" />
-                <span className="text-sm text-gray-400">amcoachingclasses34@gmail.com</span>
+                <span className="text-sm text-gray-400">
+                  amcoachingclasses34@gmail.com
+                </span>
               </li>
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
                 <span className="text-sm text-gray-400">
-                  Street No 1, H.No. 383, Fiza Colony Rd, Ashiyana Colony, Viswakarma
-                  Nagar, Nariyalkheda, Bhopal, Madhya Pradesh 462100
-
+                  Street No 1, H.No. 383, Fiza Colony Rd, Ashiyana Colony,
+                  Viswakarma Nagar, Nariyalkheda, Bhopal, Madhya Pradesh 462100
                 </span>
               </li>
             </ul>
@@ -128,17 +163,23 @@ const Footer = () => {
               © {currentYear} A.M Coaching Classes. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors duration-200"
+              >
                 Privacy Policy
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors duration-200"
+              >
                 Terms & Condition
               </a>
             </div>
           </div>
         </div>
       </div>
-    </footer >
+    </footer>
   );
 };
 

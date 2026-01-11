@@ -111,7 +111,7 @@ export default function HeroSection() {
             <Button
               onClick={() =>
                 window.open(
-                  "https://www.instagram.com/amcoachingclasses1?igsh=YzljYTk1ODg3Zg==",
+                  "https://wa.me/918827123844",
                   "_blank",
                   "noopener,noreferrer"
                 )
